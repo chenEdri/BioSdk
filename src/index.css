@@ -1,0 +1,282 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, sans-serif;
+  background: #f5f5f5;
+  color: #333;
+  min-height: 100vh;
+}
+
+/* Navbar */
+.navbar {
+  background: #1a1a2e;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.nav-brand a {
+  color: #e94560;
+  text-decoration: none;
+  font-size: 1.4rem;
+  font-weight: bold;
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+}
+
+.nav-links a {
+  color: #eee;
+  text-decoration: none;
+  padding: 0.4rem 0.8rem;
+  border-radius: 4px;
+  transition: background 0.2s;
+}
+
+.nav-links a:hover {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.nav-user {
+  color: #aaa;
+  font-size: 0.9rem;
+}
+
+.nav-btn {
+  background: #e94560;
+  color: white;
+  border: none;
+  padding: 0.4rem 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  transition: background 0.2s;
+}
+
+.nav-btn:hover {
+  background: #d63851;
+}
+
+/* Container */
+.container {
+  max-width: 800px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+
+/* Page */
+.page {
+  background: white;
+  border-radius: 8px;
+  padding: 2rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.page h1 {
+  color: #1a1a2e;
+  margin-bottom: 1rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 2px solid #e94560;
+}
+
+/* Info Box */
+.info-box {
+  background: #f8f9fa;
+  border: 1px solid #dee2e6;
+  border-radius: 6px;
+  padding: 1rem;
+  margin: 1rem 0;
+}
+
+.info-box p {
+  margin: 0.4rem 0;
+  font-size: 0.95rem;
+}
+
+/* Form */
+.form {
+  margin: 1.5rem 0;
+}
+
+.form-group {
+  margin-bottom: 1rem;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 0.4rem;
+  font-weight: 500;
+  color: #555;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 0.7rem 1rem;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 1rem;
+  transition: border-color 0.2s;
+}
+
+.form-group input:focus {
+  outline: none;
+  border-color: #e94560;
+  box-shadow: 0 0 0 2px rgba(233, 69, 96, 0.1);
+}
+
+/* Buttons */
+button {
+  background: #1a1a2e;
+  color: white;
+  border: none;
+  padding: 0.7rem 1.5rem;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background 0.2s;
+}
+
+button:hover:not(:disabled) {
+  background: #16213e;
+}
+
+button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.btn {
+  display: inline-block;
+  background: #1a1a2e;
+  color: white;
+  text-decoration: none;
+  padding: 0.7rem 1.5rem;
+  border-radius: 4px;
+  transition: background 0.2s;
+}
+
+.btn:hover {
+  background: #16213e;
+}
+
+/* Actions */
+.actions {
+  margin-top: 1.5rem;
+}
+
+.actions h3 {
+  margin-bottom: 0.8rem;
+  color: #555;
+}
+
+/* Response Box */
+.response-box {
+  margin-top: 1.5rem;
+  background: #e8f5e9;
+  border: 1px solid #a5d6a7;
+  border-radius: 6px;
+  padding: 1rem;
+}
+
+.response-box h3 {
+  color: #2e7d32;
+  margin-bottom: 0.5rem;
+}
+
+.response-box pre {
+  background: #1a1a2e;
+  color: #4caf50;
+  padding: 1rem;
+  border-radius: 4px;
+  overflow-x: auto;
+  font-size: 0.85rem;
+  line-height: 1.5;
+}
+
+/* Error Box */
+.error-box {
+  margin-top: 1rem;
+  background: #ffebee;
+  border: 1px solid #ef9a9a;
+  border-radius: 6px;
+  padding: 1rem;
+  color: #c62828;
+}
+
+/* Actions Row */
+.actions-row {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+/* Activity Box */
+.activity-box {
+  margin-top: 1.5rem;
+  background: #f3e5f5;
+  border: 1px solid #ce93d8;
+  border-radius: 6px;
+  padding: 1rem;
+}
+
+.activity-box h3 {
+  color: #6a1b9a;
+  margin-bottom: 0.8rem;
+}
+
+.no-activity {
+  color: #888;
+  font-style: italic;
+}
+
+.activity-list {
+  list-style: none;
+  padding: 0;
+}
+
+.activity-item {
+  display: flex;
+  gap: 0.8rem;
+  align-items: center;
+  padding: 0.5rem 0.8rem;
+  border-bottom: 1px solid #e1bee7;
+}
+
+.activity-item:last-child {
+  border-bottom: none;
+}
+
+.activity-time {
+  color: #666;
+  font-size: 0.85rem;
+  font-family: monospace;
+}
+
+.activity-action {
+  font-weight: 600;
+  color: #4a148c;
+}
+
+.activity-type {
+  color: #888;
+  font-size: 0.9rem;
+}
+
+.activity-status {
+  margin-left: auto;
+  background: #4caf50;
+  color: white;
+  padding: 0.15rem 0.5rem;
+  border-radius: 3px;
+  font-size: 0.8rem;
+}
