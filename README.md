@@ -17,6 +17,38 @@ This app integrates a behavioral analytics SDK and simulates API flows for user 
 
 ---
 
+## Screenshots
+
+### Home Page
+
+![Home Page](docs/screenshots/01-home.png)
+
+### Login Page
+
+![Login Page](docs/screenshots/02-login.png)
+
+### Login → Init API Response
+
+![Init Response](docs/screenshots/03-login-init-response.png)
+
+### Account Overview
+
+![Account Overview](docs/screenshots/04-account-overview.png)
+
+### Account Activity Log
+
+![Activity Log](docs/screenshots/05-account-activity.png)
+
+### Payment Page
+
+![Payment Page](docs/screenshots/06-payment.png)
+
+### Payment → GetScore API Response
+
+![GetScore Response](docs/screenshots/07-payment-getscore-response.png)
+
+---
+
 ## Features Demonstrated
 
 ### ✅ SDK Loaded
